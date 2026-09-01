@@ -44,6 +44,8 @@ h2.h{font-family:'Anton',sans-serif; font-weight:400; font-size:clamp(28px,4vw,4
 .gauto{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));}
 .card{background:var(--card); border:1px solid var(--line); border-radius:4px; padding:22px;}
 .chart-card{background:var(--card); border:1px solid var(--line); border-radius:4px; padding:24px 24px 12px;}
+.section-note{font-family:'JetBrains Mono',monospace; font-size:11px; line-height:1.6; color:var(--ink-soft); margin:16px 0 -34px; padding-top:14px; border-top:1px solid var(--line);}
+.section-note a{color:inherit;}
 .chart-card .chart-title{font-family:'JetBrains Mono',monospace; font-size:11.5px; text-transform:uppercase; letter-spacing:.08em; color:var(--ink-soft); font-weight:700; margin-bottom:14px; display:flex; justify-content:space-between; align-items:center;}
 canvas{max-width:100%;}
 .chart-box{position:relative; width:100%; height:280px;}
@@ -130,7 +132,7 @@ footer .fmark{font-family:'JetBrains Mono',monospace; font-size:11px; letter-spa
     
   </section>
   <hr class="tear">
-  <section class="alt">
+  <section class="alt" style="padding-top:32px;">
     <div class="section-head">
       <span class="eyebrow accent">Mainstream vs. Underground</span>
       <h2 class="h">How popular are our picks?</h2>
@@ -140,6 +142,7 @@ footer .fmark{font-family:'JetBrains Mono',monospace; font-size:11px; letter-spa
       <div class="chart-title"><span>Popularity score distribution</span></div>
       <div class="chart-box tall"><canvas id="chart-popularity"></canvas></div>
     </div>
+    <p class="section-note">Spotify's popularity score (0–100) is calculated per track by an algorithm based primarily on total play count and how recent those plays are — a song with lots of plays right now scores higher than one with the same lifetime total spread over years back. Source: <a href="https://developer.spotify.com/documentation/web-api/reference/get-track" target="_blank" rel="noopener">Spotify Web API Reference</a>.</p>
   </section>
   <hr class="tear">
   <section>
