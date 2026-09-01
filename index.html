@@ -135,7 +135,7 @@ footer .fmark{font-family:'JetBrains Mono',monospace; font-size:11px; letter-spa
   <section class="alt" style="padding-top:32px;">
     <div class="section-head">
       <span class="eyebrow accent">Mainstream vs. Underground</span>
-      <h2 class="h">How popular are our picks?</h2>
+      <h2 class="h">Song Popularity</h2>
       <p>Spotify gives each track a popularity score from 0–100. Our average was 54.1/100.</p>
     </div>
     <div class="chart-card">
@@ -150,7 +150,8 @@ footer .fmark{font-family:'JetBrains Mono',monospace; font-size:11px; letter-spa
       <h2 class="h">Top Genres &amp; Artists</h2>
       <p>Rock leads the log at 43.8% of all tracks, with Electronic the runner-up at 19.6%.</p>
     </div>
-    <div class="grid g2"><div class="chart-card"><div class="chart-title"><span>Tracks by genre</span></div><div class="chart-box tall"><canvas id="chart-genre"></canvas></div></div><div class="chart-card"><div class="chart-title"><span>Rock's subgenres</span><span>of 9,665 rock tracks</span></div><div class="chart-box tall"><canvas id="chart-subgenre"></canvas></div></div></div>
+    <div class="grid g2"><div class="chart-card"><div class="chart-title"><span>Tracks by genre</span></div><div class="chart-box tall"><canvas id="chart-genre"></canvas></div></div><div class="chart-card"><div class="chart-title"><span>Rock's subgenres</span><span>of 4,582 rock tracks</span></div><div class="chart-box tall"><canvas id="chart-subgenre"></canvas></div></div></div>
+    <p class="section-note" style="border-top:none; padding-top:0; border-bottom:1px solid var(--line); padding-bottom:14px; margin-bottom:34px;">Genre data is looked up from Discogs by matching each track's album name. Discogs classifies every release under one of its 15 fixed main genres (e.g. Rock, Electronic, Funk / Soul) — the "genre" reported here — and tags it with one or more finer-grained styles (e.g. Hard Rock, Shoegaze, Post-Punk) drawn from a much larger, non-exclusive list, which we roll up into the "subgenre" breakdown above.</p>
     <div class="chart-card" style="margin-top:18px;">
       <div class="chart-title"><span>Most-played artists</span></div>
       <div class="chart-box tall"><canvas id="chart-artists"></canvas></div>
@@ -168,8 +169,8 @@ footer .fmark{font-family:'JetBrains Mono',monospace; font-size:11px; letter-spa
       <div class="chart-box"><canvas id="chart-decades"></canvas></div>
     </div>
     <div class="grid g2" style="margin-top:18px;">
-      <div class="insight"><span class="n">OLDEST ON RECORD</span><h3>Ain&#x27;t Misbehavin&#x27; — 1926</h3><p>by Fats Waller, logged Apr 8, 2026.</p></div>
-      <div class="insight"><span class="n">MOST-PLAYED YEAR</span><h3>2025 (1320)</h3><p>the release year with the most tracks logged in this run.</p></div>
+      <div class="insight"><span class="n">OLDEST ON RECORD</span><h3>Ain&#x27;t Misbehavin&#x27; by Fats Waller — 1926</h3><p>logged on Apr 8, 2026.</p></div>
+      <div class="insight"><span class="n">MOST-PLAYED YEAR</span><h3>2025 (1,320)</h3><p>the release year with the most tracks logged in this run.</p></div>
     </div>
   </section>
   <hr class="tear">
@@ -191,6 +192,7 @@ footer .fmark{font-family:'JetBrains Mono',monospace; font-size:11px; letter-spa
         <ul class="country-list"><li><span class="c-name">United Kingdom</span><span class="c-count">1,442</span></li><li><span class="c-name">Canada</span><span class="c-count">173</span></li><li><span class="c-name">Australia</span><span class="c-count">133</span></li><li><span class="c-name">France</span><span class="c-count">122</span></li><li><span class="c-name">South Korea</span><span class="c-count">93</span></li><li><span class="c-name">Sweden</span><span class="c-count">87</span></li><li><span class="c-name">Germany</span><span class="c-count">69</span></li><li><span class="c-name">Japan</span><span class="c-count">68</span></li><li><span class="c-name">Ireland</span><span class="c-count">49</span></li><li><span class="c-name">Mexico</span><span class="c-count">48</span></li></ul>
       </div>
     </div>
+    <p class="section-note">Artist country of origin was only resolvable for 6,070 of 10,462 logged plays (58.0%), matched via MusicBrainz artist metadata — the rest are excluded from the map and totals above rather than counted as domestic.</p>
   </section>
 </main>
 <footer>
